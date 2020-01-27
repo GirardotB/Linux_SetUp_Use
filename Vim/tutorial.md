@@ -12,12 +12,12 @@
 
 ## Configurer 
 
-### General setting 
+### General setting 
 
 Dans le init.vim (~/.config/nvim/init.vim) 
 
 
-#### Color themes 
+#### Color themes 
 
 Deux assez sympas: 
 
@@ -26,7 +26,7 @@ Deux assez sympas:
 
 Puis (pour gnome-terminal) rightClick -> preferences -> profils -> onedark. 
 
-#### Polices 
+#### Polices 
 
 Avec onedark (colortheme) + inconsolata ça fit pas mal Atom style. 
 
@@ -37,7 +37,7 @@ Puis aller dans préférences (si gnome-terminal) -> polices
 
 Pour les pluggins, vim-plug (voir References) conseillé.
 
-### vim-plug (gestionnaire de pluggins)
+### vim-plug (gestionnaire de pluggins)
 	
 	$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -67,11 +67,30 @@ Un peu plus compliqué pour YCM:
 
 De plus, nécessite supertab et ultisnipps pour fonctionner de façon sympa.  
 
-#### Fugitive (Git wrapper): comment l'utiliser ? 
+#### Fugitive (Git wrapper): comment l'utiliser ? 
 
-à compléter 
++ **:Gwrite** 
++ **:G** 
++ **:git ...** 
 
+... à compléter 
 
+#### vim-pandoc-markdown-preview 
+
+Permet de compiler visualiser "en direct" les changements dans un .md et dans le pdf correspondant compilé avec pandoc (donc latex). 
+Possiblité de personaliser le template de compilation (et probablement) de faire du beamer du coup. 
+
++ Installer via Plug 
+
+Dans le **init.vim**: 
+
+    let g:md_pdf_viewer="<previewer>"
+
+Pour configurer le previewer (Okular par exemple) 
+
+    let g:md_args = "--template eisvogel --listings"
+
+Pour utiliser le template eisvogel par exemple ici (non maintenu ?) 
 
 # References 
 

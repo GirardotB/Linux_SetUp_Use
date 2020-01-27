@@ -47,6 +47,9 @@ Plug 'plasticboy/vim-markdown'
 Plug 'https://github.com/MattesGroeger/vim-bookmarks'
 
 
+" vim-pandoc-markdown-preview
+Plug 'https://github.com/conornewton/vim-pandoc-markdown-preview' 
+
 call plug#end()
 
 
@@ -152,4 +155,10 @@ let g:bookmark_auto_close = 1
 "" it doesn't get checked into verson control.
  let g:bookmark_save_per_working_dir = 1
  let g:bookmark_auto_save = 1 
+
+
+ " Vim-pandoc-markdown-preview 
+ "
+ " set Okular as default preview previewer 
+ let g:md_pdf_viewer="Okular"
 
