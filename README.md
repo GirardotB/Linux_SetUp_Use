@@ -1,5 +1,22 @@
-# Linux Set up's and Uses
+# Linux set-up and use
 
-Gather configs of Basics (Vim, Git, ...) 
+Goal: gather together all installs, configs, use of work-related, scientific Unix/Linux tools. 
 
-## Vim (and neovim) 
+Here is given a brief description of each tools. See corresponding folders for further details. 
+
+## Arch Linux
+
+## Vim / Neovim
+
+## Git and Colleagues (Hub, GitHub) 
+
+## Urxvt
+
+## Pandoc
+
+## i3wm
+
+
+
+
+
